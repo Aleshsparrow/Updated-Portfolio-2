@@ -1,0 +1,40 @@
+
+    body{
+        background-size: 100%;
+        background-image: linear-gradient(to bottom left, silver, gray, black);
+    }
+    nav{
+        color: white;
+        display: inline;
+    }
+    #navdiv{
+        font-size: large;
+        color: white;
+    }
+    #main{
+        color: white;
+        position: relative;
+        font-family: 'Indie Flower', cursive;
+
+    }
+    #text{
+        font-size: 20px;
+    }
+    #maintext:hover{
+        color:rgb(231, 12, 12);
+        font-size: 25px;
+    }
+    .links{
+        margin-bottom: 60px;
+    }
+    button:hover{
+        color: red;
+    }
+    #cardi{
+        color: black;
+    }
+    #cardi:hover{
+        background-color: red;
+        font-size: large;
+        font-weight: bolder;
+    }
