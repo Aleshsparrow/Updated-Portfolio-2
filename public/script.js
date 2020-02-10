@@ -9,13 +9,12 @@ $(submitBtn).on("click", function(event){
         name: $("#name").val().trim(),
         message: $("#message").val().trim()
     };
-    // console.log(sendMessage)
-    // $.ajax({
-    //     url: "/submit",
-    //     method: "POST",
-    //     data: sendMessage
-    // }).then(function (data) {
-    //     console.log(data)
-    // })
-
+    console.log(sendMessage)
+    $.ajax({
+        url: "/submit",
+        method: "POST",
+        data: sendMessage
+    }).then(function (data) {
+        console.log(data)
+    })
 })

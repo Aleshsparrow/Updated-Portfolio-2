@@ -10,6 +10,8 @@
 
     This project is a revision of my previous portfolio project. I decided to update and polish my portfolio to make it more appealing and also add new projects to it.
 
+    I also added a database and and connected it to the form so I can capture information entered by user when the send button is clicked.
+
     Link to the live website can be found in the contact section.
    
 

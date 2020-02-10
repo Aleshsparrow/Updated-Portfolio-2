@@ -1,10 +1,8 @@
 const express = require("express");
+const mongojs = require("mongojs");
 const logger = require("morgan");
 const mongoose = require("mongoose");
 
-const PORT = process.env.PORT || 3000;
-
-const Client = require("./usermodel.js");
 
 const app = express();
 
@@ -13,23 +11,28 @@ app.use(logger("dev"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static("public"));
-
+const PORT = process.env.PORT || 3000;
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/userdb", { useNewUrlParser: true });
 
+app.use(express.static("public"));
 
+const databaseUrl = "clientdb";
+const collections = ["client"];
 
-app.post("/submit", ({body}, res) => {
-  Client.create(body)
-  console.log(body)
-    // .then(dbUser => {
-    //   res.json(dbUser);
-    //   console.log(dbUser)
-    // })
-    .catch(err => {
-      res.json(err);
-    });
+const db = mongojs(databaseUrl, collections);
+
+db.on("error", error => {
+  console.log("Database Error:", error);
 });
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname + "./public/index.html"));
+});
+
+app.post("/submit", (req, res) => {
+  console.log(req.body)
+  db.client.insert(req.body)
+})
 
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
