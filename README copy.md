@@ -1,4 +1,4 @@
-# Updated-Profile-Page
+# Updated-Profile-2
 ## About the project.
 * This project is aimed at giving a glimpse of my web-development abilities to potential employers and/or clients. I made the design on this project very simple and concise but yet compelling anyone that sees it to want to see more of my projects.
 
@@ -6,7 +6,9 @@
 
     I built this web page using bootstrap grid layout and got most of the components on the page from bootstrap; this reduced the styling work I had to do greatly.
 
-    This project is a revision of my previous portfolio project. I decided to update and polish my portfolio to make it more appealing.
+    I also added some hover effects to some texts and gradient on the background.
+
+    This project is a revision of my previous portfolio project. I decided to update and polish my portfolio to make it more appealing and also add new projects to it.
 
     Link to the live website can be found in the contact section.
    
@@ -25,7 +27,7 @@
 ## Contact
 * Segun Alesinloye 
 * segunalesh@gmail.com 
-* Project link:  https://aleshsparrow.github.io/Updated-Profile-Page/
+* Project link:  https://protected-wave-24241.herokuapp.com/
 * Github repo link: https://github.com/Aleshsparrow
 
 ## Acknowledgement

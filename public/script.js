@@ -18,5 +18,4 @@ $(submitBtn).on("click", function(event){
     //     console.log(data)
     // })
 
-    // windows.location.reload()
 })

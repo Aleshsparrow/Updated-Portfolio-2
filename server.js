@@ -17,9 +17,7 @@ app.use(express.static("public"));
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/userdb", { useNewUrlParser: true });
 
-// app.get("/", (req, res) => {
-//   res.render(html, "index.html")
-// })
+
 
 app.post("/submit", ({body}, res) => {
   Client.create(body)
