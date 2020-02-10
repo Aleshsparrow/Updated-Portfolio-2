@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 const PORT = process.env.PORT || 3000;
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/userdb", { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/clientdb", { useNewUrlParser: true });
 
 app.use(express.static("public"));
 
